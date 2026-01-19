@@ -23,3 +23,4 @@ app.include_router(contacts_router)
 @app.get("/")
 def root():
     return {"message": "Japan Medical Center API is running"}
+# why does it say i have no main
