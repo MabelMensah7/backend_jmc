@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Japan Medical Center | Book Appointment</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="container">
+  <div class="form-card">
+    <h1>Book Your Appointment</h1>
+    <p>Professional healthcare scheduling at your fingertips</p>
+
+    <form id="appointmentForm" class="form-grid">
+      <div>
+        <label>Full Name</label>
+        <input type="text" id="full_name" required />
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="email" id="email" required />
+      </div>
+
+      <div>
+        <label>Phone</label>
+        <input type="tel" id="phone" required />
+      </div>
+
+      <div>
+        <label>Department</label>
+        <select id="department" required>
+          <option value="">Select</option>
+          <option>General Medicine</option>
+          <option>Pediatrics</option>
+          <option>Obstetrics & Gynecology</option>
+          <option>Surgery</option>
+          <option>Emergency</option>
+          <option>Physiotherapy</option>
+          <option></option>
+        </select>
+      </div>
+
+      <div>
+        <label>Date</label>
+        <input type="date" id="date" required />
+      </div>
+
+      <div>
+        <label>Time</label>
+        <input type="time" id="time" required />
+      </div>
+
+      <div class="full">
+        <label>Additional Notes</label>
+        <textarea id="notes"></textarea>
+      </div>
+
+      <div class="full">
+        <button type="submit" class="btn-primary">Book Appointment</button>
+      </div>
+    </form>
+
+    <p id="responseMessage" class="response"></p>
+  </div>
+</div>
+
+<script src="js/appointment.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@ app = FastAPI(title="Japan Medical Center API", version="1.0")
 # 2. Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allow all origins; in production, specify your frontend domain
+    allow_origins=["*"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -23,4 +23,3 @@ app.include_router(contacts_router)
 @app.get("/")
 def root():
     return {"message": "Japan Medical Center API is running"}
-# why does it say i have no main
